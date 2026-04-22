@@ -1,0 +1,34 @@
+// ^ mixin os small screens
+@mixin sm {
+    //this is the condition for small screens
+    @media (max-width: 650px) {
+        //this is the code that we want to run
+        @content;
+    }
+}
+
+@mixin md{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin lg{
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (min-width: 1200px) {
+        @content;
+    }   
+}
+
+@mixin xxl{
+    @media (min-width: 1400px) {
+        @content;
+    }   
+}
+

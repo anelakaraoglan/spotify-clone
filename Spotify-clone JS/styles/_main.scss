@@ -1,0 +1,73 @@
+main {
+    background-color: $grayColor;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+
+    //header inside main
+    header {
+        background-color: $blackColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    // form inside header
+    form{
+        display: flex;
+        width: 100%;
+        box-shadow: 0 0 8px;
+        max-width: 350px;
+        border-radius: 5px;
+        @include md{
+            max-width: unset;
+        }
+
+        input{
+            background-color: transparent;
+            padding: 15px;
+            width: 100%;
+            color: $textColor;
+        }
+
+        button{
+            background: none;
+            color: $textColor;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+
+    }
+
+        //nav inside header
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            @include md{
+                display: none;
+            }
+            a{
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+
+}
+
+//section
+section{
+    margin-top: 20px;
+
+    //TODO MUSIC CARDS
+}
